@@ -66,20 +66,23 @@
                     </div>
                 </div>
                 
-                <form class="flex flex-col" action="">
-                    <div class="flex flex-col md:flex-row gap-12 mx-4 my-10 ">
-                         <input class="flex w-80 py-3 text-[#f8f6f6] px-8 rounded-xl  border-solid  border-[#a55e02bb] bg-[#34c9b828]" type="text" placeholder="Your Name" required>
-                         <input class="flex w-80 md:mr-12 text-[#f8f6f6] py-3 px-8 rounded-xl border-solid border-[#a55e02bb] bg-[#34c9b81c]" type="text" placeholder=" Your Email" required>
-                    </div>
-                    <div class="flex">
-                        <input class="flex-auto mr-6 md:mr-16 ml-4 py-3 px-8 rounded-xl  border-solid border-[#a55e02bb]  text-[#f8f6f6] bg-[#34c9b81f] "  type="text" placeholder="Subject">
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col" action="">
+                
+                  <input type="hidden" name="access_key" value="96d81dc1-f811-4f42-b8bb-493ee3b25748">
+                     <div class="flex flex-col md:flex-row gap-12 mx-4 my-10 ">
+                     
+                         <input type="text" name="name"  class="flex w-80 py-3 text-[#f8f6f6] px-8 rounded-xl  border-solid  border-[#a55e02bb] bg-[#34c9b828]" type="text" placeholder="Your Name" required>
+                         <input type="email" name="email" class="flex w-80 md:mr-12 text-[#f8f6f6] py-3 px-8 rounded-xl border-solid border-[#a55e02bb] bg-[#34c9b81c]" type="text" placeholder=" Your Email" required>
+                     </div>   
+                      <div class="flex">
+                        <input type="text" name="title" class="flex-auto mr-6 md:mr-16 ml-4 py-3 px-8 rounded-xl  border-solid border-[#a55e02bb]  text-[#f8f6f6] bg-[#34c9b81f] "  type="text" placeholder="Subject">
                     </div>
                     <div class="mt-10 flex-auto mr-6 md:mr-16 ml-4" >
-                        <input class="rounded-xl border border-solid border-[#34c9b844] bg-[#34c9b800] py-8 md:py-20  w-full text-[#f8f6f6] px-8 " type="textarea"placeholder="Subject" >
-                    </div>
+                        <input  type="text" name="text" class="rounded-xl border border-solid border-[#34c9b844] bg-[#34c9b800] py-8 md:py-20  w-full text-[#f8f6f6] px-8 " type="textarea"placeholder="message" >
+                    </div> 
                     <div class="flex justify-center items-center mb-7 mt-6 md:mt-0">
-                        <input class="bg-[#1cb3a18f] hover:bg-[#349e92c4] duration-200 rounded-xl px-3 py-2 text-[#f8f6f6b6]" type="submit" value="sign masege">
-                    </div>
+                      <button  class="bg-[#1cb3a18f] hover:bg-[#349e92c4] w-16 h-12 duration-200 rounded-xl px-3 py-2 text-[#f8f6f6b6]" type="submit" value="">sen</button>
+                    </div> 
                 </form>
             
             </div>
@@ -137,5 +140,7 @@
 
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="./js/sciptcontat.js"></script>
+      
 </body>
 </html>
