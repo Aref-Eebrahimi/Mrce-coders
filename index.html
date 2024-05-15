@@ -9,10 +9,19 @@
     <link rel="stylesheet" href="./stally.css">
     <script src="./tailwind.js"></script>
     <link rel="stylesheet" href="tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     
   
 </head>
+ <style>
+  .slide{
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+ </style>
 <body class="overflow-x-hidden">
    <!-- ************************************ -->
    <!-- header -->
@@ -22,8 +31,8 @@
    <nav class=" ">
       <div class="md:flex flex flex-row  justify-between md:text-center  ">
          <div class="flex  md:flex md:justify-start ">
-            <img class="h-12 " src="./img/logo.png" alt="">
-            <p class="text-lg ml-1 mt-1 md:mt-o md:text-3xl font-bold text-[#eef5f3] ">m.aref </p>
+            <img class="h-12 rounded-full " src="./img/logo12 (1).jpg" alt="">
+            <p class="text-lg ml-3 mt-1 md:mt-o md:text-3xl font-bold text-[#eef5f3] ">m.aref </p>
          </div>
 
    
@@ -84,7 +93,7 @@
   <section>
      <div class="mt-10 md:mt-28 ">
         <div class="text-center flex flex-col gap-4">
-           <h1 class="text-[#e5f0ee] text-6xl font-bold mb-4">Welcom to M.Aref <br> Web</h1>
+           <h1 class="text-[#e5f0ee] text-6xl font-bold mb-4">Welcome to M.Aref's <br> Web</h1>
            <p class="text-2xl  text-[#3eeed9]">Lorem dolor  amet content consectetur adipisicing<br>ipsum  sit amet consectetur
             adipisicing</p>
         </div>
@@ -106,17 +115,17 @@
  <!-- main -->
  <!-- **************************************** -->
    <section>
-    <div class="max-w-6xl mx-auto  flex flex-col gap-20">
+    <div data-aos="fade-up" class="max-w-6xl mx-auto  flex flex-col gap-20">
       <div class="flex text-center flex-col gap-4 ">
         <h1  class="text-[#e5f0eee7] text-4xl font-bold">Be the best with Mars Coders</h1>
         <p class="text-[#2af7df] text-xl"> Amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet <br>consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod?</p>
       </div>
  
-      <div class=" ">
+      <div  class=" ">
          <div class="mx-auto ">
          <div class="flex flex-col lg:flex-row gap-16 lg:gap-0 justify-between ">
  
-           <div class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
+           <div data-aos="fade-right" class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
              <div style="outline: 1px solid #e0830ae3; " class="rounded-full p-3  bg-[#583b2465] w-16 lg:w-14 -mt-10 ">
                <img src="./img/new pc/icon-brand-recognition.svg" alt="">
              </div>
@@ -124,7 +133,7 @@
              <p class="text-[#e5f0eed0] text-center">Rasem ipsum dolor sit amet <br>consectetur adipisicing elit.<br> At dolor itaque eius amet <br>est quas iusto!</p>
            </div>
  
-          <div class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
+          <div data-aos="fade-up" class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
            <div style="outline: 1px solid #e0830ae3; " class="rounded-full p-3  bg-[#583b2465] w-16 lg:w-14 -mt-10 ">
              <img src="./img/new pc/icon-detailed-records.svg" alt="">
            </div>
@@ -132,7 +141,7 @@
            <p class="text-[#e5f0eed0] text-center">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.<br> At dolor the itaque eius elit. <br>est quas iusto! dolor </p>
          </div>
  
-          <div class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
+          <div data-aos="fade-up" class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
            <div style="outline: 1px solid #e0830ae3; " class="rounded-full p-3  bg-[#583b2465] w-16 lg:w-14 -mt-10 ">
              <img class="h-9 md:h-8 pl-1" src="./img/new pc/icon-security.svg" alt="">
            </div>
@@ -140,7 +149,7 @@
            <p class="text-[#e5f0eed0] text-center">Korem ipsum dolor sit amet <br>consectetur adipisicing elit.<br> At dolor itaque eius consectetur <br>est quas consectetur iusto!</p>
          </div>
   
-         <div class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
+         <div data-aos="fade-left" class=" px-4 flex flex-col justify-center items-center lg:text-left py-4 rounded-lg  h-52">
            <div style="outline: 1px solid #e0830ae3; " class="rounded-full p-3  bg-[#583b2465] w-16 lg:w-14 -mt-10 ">
              <img src="./img/new pc/icon-fully-customizable.svg" alt="">
            </div>
@@ -163,12 +172,12 @@
       <p class="text-[#e7e5e5] text-lg">sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet <br>consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod? </p>
     </div> -->
     <div class="flex flex-col md:flex-row gap-6  ">
-      <div>
+      <div data-aos="fade-up" >
         <img class="w-auto brightness-75" src="./img/aref/img2.png" alt="">
         <p class="text-[#e5f0eed0] mt-5">Worem ipsum dolor sit amet consectetur adipisicing elit. Saepe ea eum. Numquam dolor Saepe  <br> ea eum vel. Numquam dolor facere aperiam non laboriosam rerum<br> laudantium odit officia modi adipisci doloremque<br> earum, quae at eos alias. </p>
 
       </div>
-      <div>
+      <div data-aos="fade-up">
         <p class="text-[#e5f0eed0]">Morem ipsum, dolor sit amet consectetur adipisicing elit.maiores quibusdam Sequi<br> maiores quibusdam doloremque, accusantium in esse eveniet omnis <br>repellat itaque iusto suscipit minima id adipisci veniam <br>similique voluptatibus aliquid amet! Dolores.</p>
         <div class="my-3">
           <div class="flex flex-row gap-2">
@@ -195,21 +204,34 @@
   <!-- ************************************************** -->
   <section style=" background-image:linear-gradient(180deg, #adadaf00, #140c0100),url(./img/aref/3\ -\ Copy\ \(2\).jpg)" class="bg-cover">
  <section  class="max-w-6xl mx-auto px-6 py-32">
-  <div class=" text-center">
+  <div data-aos="fade-up" class=" text-center">
     <h1 class="text-[#3eeed9da] text-4xl pb-4 font-bold ">Experience the best with Mars Coders</h1>
     <p class=" text-[#e5f0eed0] text-lg" >Lorem ipsum dolor sit amet, consectetur adipisicing elit  dolor sit amet ipsum dolor sit amet, consectetur sit amet ipsum  
       <br> dolor sit amet, consectetur adipisicing elit  dolor sit amet ipsum dolor sit amet, consectetur, .
       <br> dolor sit amet, consectetur adipisicing elit  dolor sit amet ipsum dolor
       </p>
-         <span class="flex justify-center items-center w-9/12 rounded-xl my-8 ml-10 md:ml-36  relative group ">
-          <div  class="bg-[#3eeed9b9] rounded-full absolute -left-8 md:-left-16 hover:bg-[#3bdfcb] duration-200">
-            <img class="h-6 md:h-10" src="./img/icans/rig.png" alt="">
-          </div>
-          <div  class="bg-[#3eeed9b9] rounded-full absolute -right-8 md:-right-16 hover:bg-[#3bdfcb] duration-200 ">
-            <img class="h-6 md:h-10" src="./img/icans/rig.png" alt="">
-          </div>
-         
-            <img class="rounded-lg bg-cover " src="./img/aref/250ff.jpg" alt="">
+      
+         <span  class="flex justify-center items-center w-9/12 rounded-xl my-8 ml-10 md:ml-36  relative group ">
+            <!-- کاری ددوباره-->
+            <a  class="prev bg-[#3eeed9b9] rounded-full absolute -left-8 md:-left-16 hover:bg-[#3bdfcb] duration-200" href="#"> <img class="h-6 md:h-10" src="./img/icans/rig.png" alt=""></a>
+            <a  class="next bg-[#3eeed9b9] rounded-full absolute -right-8 md:-right-16 hover:bg-[#3bdfcb] duration-200 " href="#"><img class="h-6 md:h-10" src="./img/icans/rig.png" alt=""></a> 
+          
+              <div id="slidr">
+                 <div class="slide active">
+                  <img class="rounded-lg bg-cover  " src="./img/aref/250ff.jpg" alt="">
+                 </div>
+                 <div class="slide">
+                  <img class="rounded-lg bg-cover  " src="./img/aref/new2.jpg" alt="">
+                 </div>
+                 <div class="slide">
+                  <img class="rounded-lg bg-cover  " src="./img/aref/250yy.jpg" alt="">
+                 </div>
+                 <div class="slide">
+                  <img class="rounded-lg bg-cover  " src="./img/aref/250hh.jpg" alt="">
+                 </div>
+            </div>
+              </div>
+            
             <div class="flex justify-between absolute  bottom-0 right-0 left-0 px-2 py-1 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 duration-200 ">
               <div class="text-xs  text-start">
                 <p class="text-[#34c9b7] ">Abstract Painting</p>
@@ -221,7 +243,7 @@
                   <img class="border-l-2 border-[#000] rounded-full h-6 -ml-3" src="./img/picture testmoial/wwww.jpg" alt="">
                   <img class="border-l-2 border-[#000] rounded-full h-6 -ml-3" src="./img/picture testmoial/pictuer3.jpg" alt="">
                   <p class="mt-2 ml-2 text-[#d6d6d6]">122k💗 4.43k</p>
-                </div>
+                
 
               </div>
               <div  class=" ">
@@ -246,11 +268,11 @@
 <main>
   <section class="max-w-6xl mx-auto px-4">
     <div>
-      <div class="text-center gap-5 flex flex-col my-10">
+      <div data-aos="fade-up" class="text-center gap-5 flex flex-col my-10">
         <h1 class="text-[#3eeed9da] text-4xl font-bold">Educate more boys & girls to support us</h1>
         <p class="text-[#e5f0eed0] text-lg">sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet <br>consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quod? </p>
       </div>
-      <div class="flex flex-col gap-7 px-3 md:px-10 ">
+      <div data-aos="fade-up" class="flex flex-col gap-7 px-3 md:px-10 ">
         <div class="flex flex-col md:flex-row gap-7 ">
          <div style="outline: 1px solid #744202;  " class="flex flex-col rounded-lg  ">
           <div class="overflow-hidden relative rounded-lg">
@@ -272,7 +294,7 @@
         </div>
       </div>
 
-        <div class="flex md:flex-row flex-col gap-7 ">
+        <div data-aos="fade-up" class="flex md:flex-row flex-col gap-7 ">
           <div style="outline: 1px solid #744202; " class="flex flex-col rounded-lg ">
             <div class="overflow-hidden relative rounded-lg">
               <img  class="h-auto transform hover:scale-110 duration-500 " src="./img/aref/250ccc.jpg" alt="">
@@ -298,12 +320,12 @@
 <!-- Our Best Projects -->
 <!-- *************************************************** -->
   <section class="max-w-6xl mx-auto px-6">
-    <div class="flex flex-col my-20 gap-12">
-      <div class="my-5 flex flex-col gap-2 text-center">
+    <div  class="flex flex-col my-20 gap-12">
+      <div data-aos="fade-up" class="my-5 flex flex-col gap-2 text-center">
         <h1 class="text-[#34c9b8dc] text-4xl font-bold">My Best Projects </h1>
         <p class="text-[#cccaca] text-lg">Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel aut qui distinctio</p>
       </div>
-      <div class="flex flex-col justify-center items-center gap-8">
+      <div data-aos="fade-up" class="flex flex-col justify-center items-center gap-8">
         <div class="flex flex-row gap-2 border-b-2 border-[#2cb8a891] pb-6 px-3">
           <p class="text-[#3cb8a9] text-4xl mt-4 md:mt-0  font-bold">100</p>
           <p class="text-[#c0c0c0] ml-4 mt-3 text-xl font-bold">Happy Clients</p>
@@ -324,7 +346,7 @@
   </section>
 
   <section class="max-w-6xl mx-auto px-6 ">
-    <div class="flex flex-col md:flex-row gap-10 " >
+    <div data-aos="fade-up" class="flex flex-col md:flex-row gap-10 " >
       <div style="outline: 1px solid #a55e02bd; " class="rounded-lg ">
       <div class="  ">
         <img class=" rounded-t-lg" src="./img/aref/vvvvv12.jpg" alt="">
@@ -442,6 +464,11 @@
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       <script src="./js/script.js"></script>
+      <script src="./js/slide.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       
 
 
